@@ -9,8 +9,8 @@ export abstract class Store<T> extends Observable {
     super(parent);
     this.setParent(parent);
   }
-  public setParent(rootStore: any): void {
-    this.parent = rootStore;
+  public setParent(parent: any): void {
+    this.parent = parent;
   }
   public setField(fieldName: string, value: any) {
     this[fieldName] = value;

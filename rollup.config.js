@@ -1,6 +1,4 @@
-import {
-  terser
-} from "rollup-plugin-terser";
+import { terser } from "rollup-plugin-terser";
 import settings from "./package.json";
 
 export default [{
