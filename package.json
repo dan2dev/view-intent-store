@@ -1,6 +1,6 @@
 {
   "name": "view-intent-store",
-  "version": "1.1.13",
+  "version": "1.2.0",
   "main": "lib/main",
   "types": "lib/main",
   "license": "MIT",
