@@ -4,6 +4,6 @@ export declare namespace FetchInjection {
         onSuccess: (url: string) => void;
         onError: (url: string) => void;
     }
-    function registerFetchAction(action: FetchAction): void;
+    function inject(action: FetchAction): void;
     function getFetchAction(): FetchAction;
 }

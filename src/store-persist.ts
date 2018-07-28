@@ -1,4 +1,4 @@
 export interface IPersistent<T> {
-  persistInput(data: T): Promise<void>;
+  persistInput(data: T): void;
   persistOutput(): T;
 }

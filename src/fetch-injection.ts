@@ -7,7 +7,7 @@ export namespace FetchInjection {
   let fetchAction: FetchAction = (url: string) => {
     console.warn(`could not load the ${url} because you didn't register the fetch action.`);
   };
-  export function registerFetchAction(action: FetchAction) {
+  export function inject(action: FetchAction) {
     fetchAction = action;
   }
   export function getFetchAction(): FetchAction {
