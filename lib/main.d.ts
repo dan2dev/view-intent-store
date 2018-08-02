@@ -13,5 +13,5 @@ export interface IConfigSettings {
     fetchAction: FetchAction;
     registrationAction: InstanceRegistrationAction;
 }
+export declare let registerRootStore: InstanceRegistrationAction;
 export declare function config(settings: IConfigSettings): void;
-export declare const registerRootStore: InstanceRegistrationAction;

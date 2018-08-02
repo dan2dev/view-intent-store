@@ -10,4 +10,5 @@ export namespace InstanceRegistrationInjection {
   export function getInstanceRegistrationAction(): InstanceRegistrationAction {
     return RegistrationRootStore;
   }
+  
 }

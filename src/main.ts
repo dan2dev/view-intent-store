@@ -13,8 +13,9 @@ export interface IConfigSettings {
   fetchAction: FetchAction;
   registrationAction: InstanceRegistrationAction;
 }
+export let registerRootStore: InstanceRegistrationAction = InstanceRegistrationInjection.getInstanceRegistrationAction();
 export function config(settings: IConfigSettings) {
   InstanceRegistrationInjection.inject(settings.registrationAction);
   FetchInjection.inject(settings.fetchAction);
+  registerRootStore = InstanceRegistrationInjection.getInstanceRegistrationAction();
 }
-export const registerRootStore: InstanceRegistrationAction = InstanceRegistrationInjection.getInstanceRegistrationAction();
